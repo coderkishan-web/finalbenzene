@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+    "scripts": {
+      "build": "npm run frontend-build && npm run backend-copy",
+      "frontend-build": "react-scripts build",
+      "backend-copy": "copyfiles -u 1 backend/**/* dist/"
+    },
+  
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.1"
+  }
+}
